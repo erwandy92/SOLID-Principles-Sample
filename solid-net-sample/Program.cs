@@ -12,7 +12,7 @@ public class Program
         Circle circle = new Circle(3);
         Cube cube = new Cube(2);
 
-        List<Object> shapes = new List<Object> { square, rectangle, circle, cube };
+        List<Shape> shapes = new List<Shape> { square, rectangle, circle, cube };
         double totalArea = areaCalculator.sum_up_all_areas(shapes);
 
         ShapesInfo shapesInfo = new ShapesInfo();

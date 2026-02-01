@@ -1,4 +1,4 @@
-public class Rectangle
+public class Rectangle : Shape
 {
     public double length;
     public double width;
@@ -19,8 +19,8 @@ public class Rectangle
         return width;
     }
 
-    // public double calculate_area()
-    // {
-    //     return length * width;
-    // }
+    public double calc_area()
+    {
+        return getLength() * getWidth();
+    }
 }

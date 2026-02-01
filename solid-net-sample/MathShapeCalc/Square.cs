@@ -1,4 +1,4 @@
-public class Square
+public class Square : Shape
 {
     public double side_length;
 
@@ -9,5 +9,10 @@ public class Square
 
     public double getSideLength() {
         return side_length;
+    }
+
+    public double calc_area()
+    {
+        return Math.Pow(getSideLength(), 2);
     }
 }

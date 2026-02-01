@@ -1,4 +1,4 @@
-public class Cube
+public class Cube: Shape
 {
     public double side_length;
 
@@ -9,5 +9,10 @@ public class Cube
 
     public double getSideLength() {
         return side_length;
+    }
+
+    public double calc_area()
+    {
+        return 6 * Math.Pow(getSideLength(), 2);
     }
 }

@@ -1,4 +1,4 @@
-public class Circle
+public class Circle : Shape
 {
     public double radius;
 
@@ -7,7 +7,13 @@ public class Circle
         this.radius = radius;
     }
 
-    public double getRadius() {
+    public double getRadius()
+    {
         return radius;
+    }
+
+    public double calc_area()
+    {
+        return Math.PI * getRadius() * getRadius();;
     }
 }
