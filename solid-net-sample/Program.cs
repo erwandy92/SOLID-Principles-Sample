@@ -7,7 +7,8 @@ public class Program
     {
         ICalculateArea areaCalculator = new CalculateArea();
         ICalculateVolume volumeCalculator = new CalculateVolume();
-        
+        ICalculateVolume volumeCalculatorV2 = new CalculateVolumeV2();
+
         //2D Shapes
         Square square = new Square(5);
         Rectangle rectangle = new Rectangle(4, 6);
@@ -25,7 +26,7 @@ public class Program
         List<Shape3D> shapes3D = new List<Shape3D> { cube };
         double totalVolume = volumeCalculator.sum_up_all_volumes(shapes3D);
 
-        ShapesInfo shapesInfo = new ShapesInfo(areaCalculator, volumeCalculator);
+        ShapesInfo shapesInfo = new ShapesInfo(areaCalculator, volumeCalculatorV2);
         Console.WriteLine(shapesInfo.print_shapes_count(shapes));
         Console.WriteLine(shapesInfo.print_shapes_calculated_areas(shapes));
         Console.WriteLine(shapesInfo.print_shapes_calculated_volumes(shapes3D));
