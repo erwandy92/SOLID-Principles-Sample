@@ -1,4 +1,4 @@
-public class Rectangle : Shape
+public class Rectangle : IShape
 {
     public double length;
     public double width;

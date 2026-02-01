@@ -20,10 +20,10 @@ public class Program
         //Not a Shape
         // NotAShape notAShape = new NotAShape();
 
-        List<Shape> shapes = new List<Shape> { square, rectangle, circle, cube };
+        List<IShape> shapes = new List<IShape> { square, rectangle, circle, cube };
         double totalArea = areaCalculator.sum_up_all_areas(shapes);
 
-        List<Shape3D> shapes3D = new List<Shape3D> { cube };
+        List<IShape3D> shapes3D = new List<IShape3D> { cube };
         double totalVolume = volumeCalculator.sum_up_all_volumes(shapes3D);
 
         ShapesInfo shapesInfo = new ShapesInfo(areaCalculator, volumeCalculatorV2);

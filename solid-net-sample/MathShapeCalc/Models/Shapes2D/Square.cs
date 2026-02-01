@@ -1,4 +1,4 @@
-public class Square : Shape
+public class Square : IShape
 {
     public double side_length;
 

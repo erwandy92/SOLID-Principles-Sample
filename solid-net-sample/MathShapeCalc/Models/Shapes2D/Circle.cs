@@ -1,4 +1,4 @@
-public class Circle : Shape
+public class Circle : IShape
 {
     public double radius;
 

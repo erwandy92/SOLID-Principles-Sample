@@ -1,4 +1,4 @@
-public interface Shape3D
+public interface IShape3D
 {
     double calc_volume();
 }

@@ -1,4 +1,4 @@
-public interface Shape
+public interface IShape
 {
     double calc_area();
 }

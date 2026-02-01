@@ -1,4 +1,4 @@
-public class NotAShape : Shape
+public class NotAShape : IShape
 {
     public double calc_area()
     {

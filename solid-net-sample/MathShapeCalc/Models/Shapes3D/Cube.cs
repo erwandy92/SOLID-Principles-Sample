@@ -1,4 +1,4 @@
-public class Cube: Shape, Shape3D
+public class Cube: IShape, IShape3D
 {
     public double side_length;
 
