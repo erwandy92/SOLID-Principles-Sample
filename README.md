@@ -13,7 +13,7 @@ A class should have a single responsibility
 >> ---
 >> This principle aims to separate behaviours so that if bugs arise as a result of your change, it won’t affect other unrelated behaviours.
 
-## O - Open-Closed
+## O - Open-Closed (OCP)
 ![Ugonna Thelma OCP](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*0MtFBmm6L2WVM04qCJOZPQ.png)
 
 Classes should be open for extension, but closed for modification
@@ -28,7 +28,7 @@ Classes should be open for extension, but closed for modification
 >> ---
 >> This principle aims to extend a Class’s behaviour without changing the existing behaviour of that Class. This is to avoid causing bugs wherever the Class is being used.
 
-## L - Liskov Substitution
+## L - Liskov Substitution (LSP)
 ![Ugonna Thelma LSP](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*yKk2XKJaCLNlDxQMx1r55Q.png)
 
 If S is a subtype of T, then objects of type T in a program may be replaced with objects of type S without altering any of the desirable properties of that program.
@@ -49,7 +49,7 @@ If S is a subtype of T, then objects of type T in a program may be replaced with
 >> ---
 >> This principle aims to enforce consistency so that the parent Class or its child Class can be used in the same way without any errors. 
 
-## I - Interface Segregation
+## I - Interface Segregation (ISP)
 ![Ugonna Thelma ISP](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*2hmyR9L43Vm64MYxj4Y89w.png)
 
 Clients should not be forced to depend on methods that they do not use.
@@ -64,7 +64,7 @@ Clients should not be forced to depend on methods that they do not use.
 >> ---
 >> This principle aims at splitting a set of actions into smaller sets so that a Class executes ONLY the set of actions it requires. 
 
-## D - Dependency Inversion
+## D - Dependency Inversion (DIP)
 ![Ugonna Thelma DIP](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Qk8tDmjQlyvwKxNTfXIo0Q.png)
 
 - High-level modules should not depend on low-level modules. Both should depend on the abstraction.
