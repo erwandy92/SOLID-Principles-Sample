@@ -93,3 +93,7 @@ Clients should not be forced to depend on methods that they do not use.
 ### SOLID Explanation & images by Ugonna Thelma:
 I hereby declare the SOLID Explanation and Images shown on my README credited to Ugonna Thelma. \
 https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898
+
+### Case Study
+The case study in the codes inspired by Amigoscode. \
+https://www.youtube.com/watch?v=_jDNAf3CzeY
