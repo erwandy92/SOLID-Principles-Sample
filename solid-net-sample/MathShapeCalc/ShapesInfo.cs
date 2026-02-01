@@ -1,17 +1,21 @@
 public class ShapesInfo
 {
-    public String print_shapes_count(int shapes_count)
+
+    private CalculateArea area_calculator = new CalculateArea();
+    private CalculateVolume volume_calculator = new CalculateVolume();
+
+    public String print_shapes_count(List<Shape> shapes)
     {
-        return "Total Shapes: " + shapes_count;
+        return "Total Shapes: " + area_calculator.count_shapes(shapes);
     }
 
-    public String print_shapes_calculated_areas(double sum_up_all_areas)
+    public String print_shapes_calculated_areas(List<Shape> shapes)
     {
-        return "Total Area: " + sum_up_all_areas;
+        return "Total Area: " + area_calculator.sum_up_all_areas(shapes);
     }
 
-    public String print_shapes_calculated_volumes(double sum_up_all_volumes)
+    public String print_shapes_calculated_volumes(List<Shape3D> shapes)
     {
-        return "Total Volume: " + sum_up_all_volumes;
+        return "Total Volume: " + volume_calculator.sum_up_all_volumes(shapes);
     }
 }

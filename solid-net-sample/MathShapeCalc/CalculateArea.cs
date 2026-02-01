@@ -12,4 +12,9 @@ public class CalculateArea
         }
         return sum;
     }
+
+    public double count_shapes(List<Shape> shapes)
+    {
+        return shapes.Count;
+    }
 }
