@@ -9,4 +9,9 @@ public class ShapesInfo
     {
         return "Total Area: " + sum_up_all_areas;
     }
+
+    public String print_shapes_calculated_volumes(double sum_up_all_volumes)
+    {
+        return "Total Volume: " + sum_up_all_volumes;
+    }
 }
