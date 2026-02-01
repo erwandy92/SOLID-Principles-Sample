@@ -1,42 +1,20 @@
 using System;
 
-public class CalculateArea
+public class CalculateArea: ICalculateArea
 {
-    // public double CalculateCircleArea(double radius)
-    // {
-    //     return System.Math.PI * radius * radius;
-    // }
-
-    // public double CalculateRectangleArea(double length, double width)
-    // {
-    //     return length * width;
-    // }
-
-    // public double CalculateTriangleArea(double @base, double height)
-    // {
-    //     return 0.5 * @base * height;
-    // }
-
-    public double sum_up_all_areas(List<Object> shapes)
+    public double sum_up_all_areas(List<Shape> shapes)
     {
         double sum = 0;
         for (int i = 0; i < shapes.Count; i++)
         {
-            Object shape = shapes[i];
-            if(shape is Square)
-            {
-                sum += Math.Pow(((Square)shape).side_length, 2);
-            }
-            else if(shape is Rectangle)
-            {
-                Rectangle rectangle = (Rectangle)shape;
-                sum += rectangle.getLength() * rectangle.getWidth();
-            }else if(shape is Circle)
-            {
-                Circle circle = (Circle)shape;
-                sum += Math.PI * circle.getRadius() * circle.getRadius();
-            }
+            Shape shape = shapes[i];
+            sum += shape.calc_area();
         }
         return sum;
+    }
+
+    public int count_shapes(List<Shape> shapes)
+    {
+        return shapes.Count;
     }
 }

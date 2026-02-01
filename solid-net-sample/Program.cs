@@ -5,13 +5,30 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        CalculateArea areaCalculator = new CalculateArea();
+        ICalculateArea areaCalculator = new CalculateArea();
+        ICalculateVolume volumeCalculator = new CalculateVolume();
+        ICalculateVolume volumeCalculatorV2 = new CalculateVolumeV2();
+
+        //2D Shapes
         Square square = new Square(5);
         Rectangle rectangle = new Rectangle(4, 6);
         Circle circle = new Circle(3);
 
-        List<Object> shapes = new List<Object> { square, rectangle, circle };
+        //3D Shape
+        Cube cube = new Cube(2);
+
+        //Not a Shape
+        // NotAShape notAShape = new NotAShape();
+
+        List<Shape> shapes = new List<Shape> { square, rectangle, circle, cube };
         double totalArea = areaCalculator.sum_up_all_areas(shapes);
-        Console.WriteLine("Total Sum of all Areas: " + totalArea);
+
+        List<Shape3D> shapes3D = new List<Shape3D> { cube };
+        double totalVolume = volumeCalculator.sum_up_all_volumes(shapes3D);
+
+        ShapesInfo shapesInfo = new ShapesInfo(areaCalculator, volumeCalculatorV2);
+        Console.WriteLine(shapesInfo.print_shapes_count(shapes));
+        Console.WriteLine(shapesInfo.print_shapes_calculated_areas(shapes));
+        Console.WriteLine(shapesInfo.print_shapes_calculated_volumes(shapes3D));
     }
 }
