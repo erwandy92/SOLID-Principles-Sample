@@ -11,9 +11,9 @@ public class Program
         Rectangle rectangle = new Rectangle(4, 6);
         Circle circle = new Circle(3);
         Cube cube = new Cube(2);
-        NotAShape notAShape = new NotAShape();
+        // NotAShape notAShape = new NotAShape();
 
-        List<Shape> shapes = new List<Shape> { square, rectangle, circle, cube, notAShape };
+        List<Shape> shapes = new List<Shape> { square, rectangle, circle, cube };
         double totalArea = areaCalculator.sum_up_all_areas(shapes);
 
         ShapesInfo shapesInfo = new ShapesInfo();
