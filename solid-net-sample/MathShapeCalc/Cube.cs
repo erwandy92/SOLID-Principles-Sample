@@ -15,4 +15,9 @@ public class Cube: Shape
     {
         return 6 * Math.Pow(getSideLength(), 2);
     }
+
+    public double calc_volume()
+    {
+        return Math.Pow(getSideLength(), 3);
+    }
 }
