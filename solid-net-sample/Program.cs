@@ -12,6 +12,8 @@ public class Program
 
         List<Object> shapes = new List<Object> { square, rectangle, circle };
         double totalArea = areaCalculator.sum_up_all_areas(shapes);
-        Console.WriteLine("Total Sum of all Areas: " + totalArea);
+
+        Console.WriteLine(areaCalculator.print_shapes_count(shapes));
+        Console.WriteLine(areaCalculator.print_shapes_calculated_areas(shapes));
     }
 }

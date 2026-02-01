@@ -39,4 +39,15 @@ public class CalculateArea
         }
         return sum;
     }
+
+    public String print_shapes_count(List<Object> shapes)
+    {
+        return "Total Shapes: " + shapes.Count;
+    }
+
+    public String print_shapes_calculated_areas(List<Object> shapes)
+    {
+        double totalArea = sum_up_all_areas(shapes);
+        return "Total Area: " + totalArea;
+    }
 }
