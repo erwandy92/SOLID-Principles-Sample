@@ -1,6 +1,6 @@
 using System;
 
-public class CalculateVolume
+public class CalculateVolume: ICalculateVolume
 {
 
     public double sum_up_all_volumes(List<Shape3D> shapes)

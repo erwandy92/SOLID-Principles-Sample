@@ -1,6 +1,6 @@
 using System;
 
-public class CalculateArea
+public class CalculateArea: ICalculateArea
 {
     public double sum_up_all_areas(List<Shape> shapes)
     {

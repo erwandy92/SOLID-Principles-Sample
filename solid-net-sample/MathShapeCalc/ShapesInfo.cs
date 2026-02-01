@@ -1,9 +1,14 @@
 public class ShapesInfo
 {
 
-    private CalculateArea area_calculator = new CalculateArea();
-    private CalculateVolume volume_calculator = new CalculateVolume();
+    private readonly ICalculateArea area_calculator;
+    private readonly ICalculateVolume volume_calculator;
 
+    public ShapesInfo(ICalculateArea calculateArea, ICalculateVolume calculateVolume)
+    {
+        this.area_calculator = calculateArea;
+        this.volume_calculator = calculateVolume;
+    }
     public String print_shapes_count(List<Shape> shapes)
     {
         return "Total Shapes: " + area_calculator.count_shapes(shapes);
