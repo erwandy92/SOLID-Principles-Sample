@@ -10,8 +10,9 @@ public class Program
         Square square = new Square(5);
         Rectangle rectangle = new Rectangle(4, 6);
         Circle circle = new Circle(3);
+        Cube cube = new Cube(2);
 
-        List<Object> shapes = new List<Object> { square, rectangle, circle };
+        List<Object> shapes = new List<Object> { square, rectangle, circle, cube };
         double totalArea = areaCalculator.sum_up_all_areas(shapes);
 
         ShapesInfo shapesInfo = new ShapesInfo();

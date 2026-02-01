@@ -35,6 +35,10 @@ public class CalculateArea
             {
                 Circle circle = (Circle)shape;
                 sum += Math.PI * circle.getRadius() * circle.getRadius();
+            }else if(shape is Cube)
+            {
+                Cube cube = (Cube)shape;
+                sum += 6 * Math.Pow(cube.getSideLength(), 2);
             }
         }
         return sum;
